@@ -1,0 +1,157 @@
+{
+  "metricasGerais": {
+    "ativosMonitorados": 10,
+    "ativosNovos": "+1 novos hoje",
+    "scansDetectados": 142,
+    "scansSub": "últimas 24 horas",
+    "portasVarridas": 4826,
+    "portasSub": "tentativas bloqueadas",
+    "ipsUnicos": 17,
+    "ipsSub": "origens externas sob análise"
+  },
+  "graficoLinhaTrafego": [
+    { "tempo": "01:40:00", "nivel": 2 },
+    { "tempo": "01:42:00", "nivel": 4 },
+    { "tempo": "01:44:00", "nivel": 1 },
+    { "tempo": "01:46:00", "nivel": 5 },
+    { "tempo": "01:48:00", "nivel": 2 },
+    { "tempo": "01:50:00", "nivel": 7 },
+    { "tempo": "01:52:00", "nivel": 9 },
+    { "tempo": "01:54:00", "nivel": 4 },
+    { "tempo": "01:56:00", "nivel": 6 },
+    { "tempo": "01:58:00", "nivel": 3 },
+    { "tempo": "02:00:00", "nivel": 8 }
+  ],
+  "tiposScan": {
+    "total": 142,
+    "udp": { "qtd": 118, "porcentagem": 83, "cor": "#00d2ff", "nome": "UDP" },
+    "tcp": { "qtd": 24, "porcentagem": 17, "cor": "#10b981", "nome": "TCP" }
+  },
+  "alertasRecentes": [
+    { "id": "1", "titulo": "Varredura UDP massiva detectada", "ip": "192.168.1.105 → 10.0.0.1", "tempo": "Agora", "cor": "#ef4444" },
+    { "id": "2", "titulo": "Tentativa de conexão TCP SYN maliciosa", "ip": "45.23.12.89 → 10.0.0.4", "tempo": "1 min", "cor": "#f59e0b" },
+    { "id": "3", "titulo": "Múltiplas conexões rejeitadas no Firewall", "ip": "185.220.101.5 → 192.168.1.1", "tempo": "4 min", "cor": "#f59e0b" },
+    { "id": "4", "titulo": "Possível vazamento de credenciais via HTTP", "ip": "192.168.1.50 → 200.45.12.3", "tempo": "12 min", "cor": "#ef4444" },
+    { "id": "5", "titulo": "Requisições ICMP Echo excessivas", "ip": "88.190.42.11 → 10.0.0.2", "tempo": "20 min", "cor": "#3b82f6" }
+  ],
+  "metricasAtivos": {
+    "total": 24,
+    "online": 18,
+    "alerta": 3,
+    "offline": 3
+  },
+  "inventarioAtivos": [
+    { "nome": "srv-web-prod-01", "ip": "192.168.1.10", "tipo": "Servidor Web", "status": "online", "scans": 42 },
+    { "nome": "srv-db-postgres", "ip": "192.168.1.20", "tipo": "Banco de Dados", "status": "online", "scans": 12 },
+    { "nome": "fw-edge-cisco", "ip": "192.168.1.1", "tipo": "Firewall Principal", "status": "online", "scans": 189 },
+    { "nome": "ws-admin-ti", "ip": "192.168.1.50", "tipo": "Estação de Trabalho", "status": "alerta", "scans": 4 },
+    { "nome": "srv-app-java-02", "ip": "10.0.0.5", "tipo": "Servidor App", "status": "offline", "scans": 0 },
+    { "nome": "srv-auth-active-dir", "ip": "10.0.0.10", "tipo": "Controlador de Domínio", "status": "online", "scans": 3 },
+    { "nome": "balanc-load-nginx", "ip": "192.168.1.5", "tipo": "Balanceador de Carga", "status": "online", "scans": 27 },
+    { "nome": "ws-marketing-04", "ip": "192.168.1.112", "tipo": "Estação de Trabalho", "status": "alerta", "scans": 8 },
+    { "nome": "srv-backup-cloud", "ip": "10.0.0.99", "tipo": "Servidor de Backup", "status": "alerta", "scans": 19 },
+    { "nome": "iot-camera-portaria", "ip": "192.168.1.201", "tipo": "Dispositivo IoT", "status": "offline", "scans": 0 }
+  ],
+  "metricasLogs": {
+    "scans": 142,
+    "portas": 4829,
+    "ips": 17,
+    "linhas": 1450
+  }
+    ,
+  "linhasDoTerminal": [
+    { "time": "02:04:12.881", "ip": "192.168.1.45", "payload": "TCP -> 10.0.0.1:22 [flags=S] (Tentativa de autenticação)" },
+    { "time": "02:03:59.043", "ip": "192.168.1.26", "payload": "UDP -> 255.255.255.255:6667 [flags=-] (Broadcast alternativo)" },
+    { "time": "02:03:55.943", "ip": "192.168.1.30", "payload": "UDP -> 255.255.255.255:6667 [flags=-]" },
+    { "time": "02:03:41.229", "ip": "185.220.101.5", "payload": "TCP -> 192.168.1.1:443 [flags=P] (Injeção SQL maliciosa)" },
+    { "time": "02:03:35.433", "ip": "192.168.1.234", "payload": "UDP -> 239.255.255.250:15600 [flags=-]" },
+    { "time": "02:03:34.501", "ip": "192.168.1.234", "payload": "UDP -> 239.255.255.250:1900 [flags=-]" },
+    { "time": "02:03:32.461", "ip": "192.168.1.234", "payload": "UDP -> 192.168.1.255:15600 [flags=-]" },
+    { "time": "02:02:11.092", "ip": "200.45.12.3", "payload": "TCP -> 192.168.1.10:80 [flags=FA] (DDoS Http Flood)" },
+    { "time": "02:01:45.312", "ip": "45.23.12.89", "payload": "TCP -> 10.0.0.4:3306 [flags=S] (Port Scan detectado)" },
+    { "time": "02:01:30.927", "ip": "192.168.1.30", "payload": "UDP -> 255.255.255.255:6667 [flags=-]" }
+  ],
+  "guiadePortas": [
+    { "numero": "22", "servico": "SSH", "desc": "Acesso remoto seguro. Porta altamente visada por robôs automatizados em ataques sequenciais de dicionário.", "crit": "critico", "dica": "Use criptografia de chave pública e desative login root." },
+    { "numero": "3306", "servico": "MySQL", "desc": "Banco de dados. Expô-la publicamente permite que atacantes externos tentem quebrar credenciais ou explorar falhas estruturais.", "crit": "critico", "dica": "Crie regras estritas no Firewall e nunca exponha publicamente." },
+    { "numero": "445", "servico": "SMB", "desc": "Compartilhamento de arquivos do Windows. Histórico crítico de vulnerabilidades graves de execução de código, como o EternalBlue.", "crit": "critico", "dica": "Bloqueie totalmente tráfego externo e mantenha pacotes atualizados." },
+    { "numero": "80", "servico": "HTTP", "desc": "Protocolo de hipertexto padrão sem criptografia. Qualquer dado enviado (senhas, sessões) trafega em texto puro na rede.", "crit": "medio", "dica": "Instale certificados SSL/TLS e force redirecionamento automático para HTTPS." },
+    { "numero": "443", "servico": "HTTPS", "desc": "Navegação web segura com criptografia ponta a ponta estruturada em certificados digitais confiáveis.", "crit": "baixo", "dica": "Certifique-se de usar TLS 1.2 ou superior e desative SSLv3." },
+    { "numero": "53", "servico": "DNS", "desc": "Resolução de nomes de domínio. Alvo comum de técnicas de envenenamento de cache ou ataques massivos de amplificação UDP.", "crit": "medio", "dica": "Configure limites de taxa (Rate Limiting) e desative recursão aberta." },
+    { "numero": "21", "servico": "FTP", "desc": "Transferência de arquivos legada. Autenticação e transmissão de dados ocorrem em formato de texto limpo de fácil interceptação.", "crit": "critico", "dica": "Migre imediatamente para SFTP (porta 22) ou FTPS seguro." },
+    { "numero": "23", "servico": "Telnet", "desc": "Terminal de acesso remoto totalmente obsoleto e insecure. Não possui nenhum tipo de criptografia nativa incorporada.", "crit": "critico", "dica": "Desative o serviço completamente de todos os roteadores e switches." }
+  ],
+  "centralAlertas": {
+    "criticos": 14,
+    "altos": 32,
+    "medios": 86,
+    "baixos": 10
+  },
+  "listaCentralAlertas": [
+    { "id": "1", "origem": "192.168.1.1", "destino": "192.168.1.4", "tipo": "médio", "desc": "UDP scan - 26p", "time": "01:50:16" },
+    { "id": "2", "origem": "45.122.34.8", "destino": "192.168.1.10", "tipo": "crítico", "desc": "Brute Force SSH", "time": "01:49:58" },
+    { "id": "3", "origem": "192.168.1.20", "destino": "8.8.8.8", "tipo": "alto", "desc": "Exfiltração DNS", "time": "01:48:12" },
+    { "id": "4", "origem": "185.220.101.5", "destino": "192.168.1.1", "tipo": "crítico", "desc": "SQL Injection", "time": "01:42:05" },
+    { "id": "5", "origem": "192.168.1.112", "destino": "10.0.0.5", "tipo": "médio", "desc": "Scanner de Rede", "time": "01:31:40" },
+    { "id": "6", "origem": "200.45.12.3", "destino": "192.168.1.10", "tipo": "alto", "desc": "DDoS HTTP Flood", "time": "01:15:22" }
+  ],
+  "motorIA": {
+    "sugestoes": 18,
+    "correlacionados": 54,
+    "analisados": 12,
+    "modelo": "Redes Neurais Convulacionais + Regras"
+  },
+  "recomendacoesIA": [
+    {
+      "id": "1", "tipo": "médio", "titulo": "192.168.1.1 → 192.168.1.4  ·  UDP scan  ·  26 portas",
+      "desc": "192.168.1.1 fez um UDP scan em 26 portas — varredura de baixa intensidade observada pelo algoritmo preditivo.",
+      "passos": ["Adicionar o IP à lista de observação", "Acompanhar a evolução nas próximas horas"],
+      "origem": "192.168.1.1", "destino": "192.168.1.4", "descTecnica": "UDP scan - 26p", "time": "01:50:16"
+    },
+    {
+      "id": "2", "tipo": "alto", "titulo": "192.168.137.1 → 192.168.137.183  ·  UDP scan  ·  53 portas",
+      "desc": "192.168.137.1 varreu 53 portas (UDP scan) — comportamento anômalo contínuo que exige contenção imediata de borda.",
+      "passos": ["Restringir o acesso do IP 192.168.137.1", "Isolar temporariamente a sub-rede afetada para auditoria"],
+      "origem": "192.168.137.1", "destino": "192.168.137.183", "descTecnica": "UDP scan - 53p", "time": "01:45:22"
+    },
+    {
+      "id": "3", "tipo": "crítico", "titulo": "185.220.101.5 → 192.168.1.1  ·  Exploit SQL  ·  1 tentativa",
+      "desc": "Detectado padrão de caracteres de escape SQL de origem externa direcionado ao banco de produção principal.",
+      "passos": ["Ativar bloqueio temporário do IP no Firewall", "Verificar logs de sanitarização do backend corporativo"],
+      "origem": "185.220.101.5", "destino": "192.168.1.1", "descTecnica": "SQL Injection", "time": "01:42:05"
+    }
+  ],
+  "perfilUsuario": {
+    "nome": "Admin Root",
+    "iniciais": "AR",
+    "email": "root@sapim.security",
+    "funcao": "Analista de Resposta a Incidentes (Blue Team)",
+    "nivel": "SOC Operator - Nível 5",
+    "equipe": "Equipe Alpha (Cyber Response)",
+    "isAdmin": true
+  },
+  "usuariosGerenciamento": [
+    { "id": "1", "nome": "Carlos Silva", "email": "carlos.silva@sapim.io", "cargo": "SOC N1", "status": "Ativo" },
+    { "id": "2", "nome": "Mariana Costa", "email": "mariana.c@sapim.io", "cargo": "Engenheira de SI", "status": "Ativo" },
+    { "id": "3", "nome": "Bruno Alves", "email": "bruno.a@sapim.io", "cargo": "Analista de Redes", "status": "Pendente" },
+    { "id": "4", "nome": "Glória Abreu", "email": "gloria.abreu@sapim.io", "cargo": "SOC N2 Specialist", "status": "Ativo" }
+  ],
+  "planosPlataforma": [
+    {
+      "id": "1",
+      "nome": "Professional SOC",
+      "preco": "R$ 450,00",
+      "periodo": "/mês",
+      "desc": "Monitoramento de segurança automatizado essencial para times de TI em crescimento que precisam de auditoria regular.",
+      "recursos": ["Até 30 ativos monitorados", "Investigação de logs brutos (Scapy)", "Alertas de tráfego UDP/TCP em tempo real", "Suporte em horário comercial"]
+    },
+    {
+      "id": "2",
+      "nome": "Enterprise Elite",
+      "preco": "R$ 1.200,00",
+      "periodo": "/mês",
+      "desc": "Defesa cibernética corporativa avançada equipada com módulo preditivo de IA e triagem profunda de vulnerabilidades.",
+      "recursos": ["Ativos e IPs monitorados ilimitados", "Diagnóstico preditivo avançado por IA", "Controle total e gerenciamento de permissões", "Auditoria completa e exportação de logs", "Garantia de Uptime e SLA contratual", "Suporte prioritário SOC Dedicado 24/7"]
+    }
+  ]
+}
